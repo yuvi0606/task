@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.page{
+    height: 100vh;
+    width: 100%;
+
+}
+.page p{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.page h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.page nav{
+    margin-top: 50px;
+}
+.page nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.page nav ul li{
+    list-style: none;
+    border: 1px solid;
+    width: 5em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(6, 63, 121);
+    color: white;
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-rows: repeat(3,280px);
+    padding: 30px;
+}
+.box .box1{
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+.box .box1.c3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url(https://themewagon.github.io/travela/img/destination-9.jpg);
+}
+.box .box1.c1{
+    background-image: url(https://themewagon.github.io/travela/img/destination-1.jpg);
+}
+.box .box1.c2{
+    background-image: url(https://themewagon.github.io/travela/img/destination-2.jpg);
+}
+.box .box1.c4{
+    background-image: url(https://themewagon.github.io/travela/img/destination-7.jpg);
+}
+.box .box1.c5{
+    background-image: url(https://themewagon.github.io/travela/img/destination-8.jpg);
+}
+.box .box1.c6{
+    background-image: url(https://themewagon.github.io/travela/img/destination-4.jpg);
+}
+.box .box1.c7{
+    background-image: url(https://themewagon.github.io/travela/img/destination-5.jpg);
+}
+.box .box1.c8{
+    background-image: url(https://themewagon.github.io/travela/img/destination-6.jpg);
+}
+@media(max-width:990px){
+    .box{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        grid-template-rows: repeat(3,250px);
+        padding: 30px;
+    }
+
+}
